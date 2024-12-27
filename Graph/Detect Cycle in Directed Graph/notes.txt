@@ -1,0 +1,18 @@
+Intuition:
+
+- If the directed graph has a cycle then topological sort order will have vertices less than V in the order.
+- If the directed graph does not have a cycle then topological sort order will have excat V vertices in the order.
+
+Algorithm:
+
+To check whether directed graph has cycle or not by using kahn's algorithm:
+1. Find the inDegree of all the nodes/vertices in the graph
+2. As kahn's algorithm is based on bfs, create a queue for bfs and push all the nodes/vertices that have inDegree as 0 (inDegree[i] == 0) in the queue.
+3. While queue is not empty:
+    a. Get front node (currNode) in the queue and pop it from the queue.
+    b. Keep incrementing the counter to keep track of number of nodes/vertices added in topological sort order.
+    c. Traverse all the adjacent node(s) of the currNode and decremenet the inDegree of each adjacent node(s) by one as
+    we're going to remove the currNode.
+    d. If inDegree of the adjacent node(s) becomes 0 in the process, then push it into queue for further traversal.
+4. If counter value is equal to number of vertices (V), then return false which means directed graph does not have a cycle.
+5. If counter value is less than number of vertices (V), then return true which means directed graph have a cycle.
