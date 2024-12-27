@@ -1,0 +1,31 @@
+Topological Sorting:
+
+- Linear ordering of vertices such that if there is an edge between u & v, u appears before v in that ordering
+- It exists only on DAG (Directed Acyclic Graph, any directed graph which does not have a cycle) 
+
+Eg: DAG with the edges:
+
+5 -> 0
+4 -> 0
+5 -> 2
+2 -> 3
+3 -> 1
+4 -> 1
+
+The possible linear ordering(s) for the above DAG:
+ 1. 5 4 2 3 1 0 -> 5 appears before 0, 4 appears before 0, 5 appears before 2, 2 appears before 3, 3 appears before 1, 4 appears before 1
+ 2. 4 5 2 3 1 0 -> 4 appears before 0, 5 appears before 0, 5 appears before 2, 2 appears before 3, 3 appears before 1, 4 appears before 1
+
+Why only in DAG ?
+- If we consider undirected graph, if there is edge between 1 and 2, it means there is edge 1 -> 2 and 2 -> 1, which practically not possible for ordering
+- If we consider directed cyclic graph (DCG):
+
+Let's consider the following DCG with edges:
+1 -> 2
+2 -> 3
+3 -> 1
+
+If try to find linear ordering of the above graph: 1 should appear before 2, 2 should appear before 3, 3 should appear before 1, which is not possible.
+As there is cyclic dependency here.
+
+Hence, we can only write linear ordering for Directed Acyclic Graph (DAG).
