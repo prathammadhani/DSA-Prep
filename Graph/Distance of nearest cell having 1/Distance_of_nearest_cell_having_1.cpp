@@ -1,5 +1,5 @@
-// Problem Name: 01 Matrix
-// Problem Link: https://leetcode.com/problems/01-matrix/
+// Problem Name: Distance of nearest cell having 1
+// Problem Link: https://www.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/1
 
 class Solution {
   public:
