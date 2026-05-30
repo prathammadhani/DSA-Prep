@@ -1,6 +1,7 @@
 //Problem Name - Selection Sort
 //Problem Link - https://www.geeksforgeeks.org/problems/selection-sort/1
 
+//Selection Sort - Select minimum element from start and swaps
 class Solution {
     void selectionSort(int[] arr) {
         // code here

@@ -1,6 +1,7 @@
 //Problem Name - Selection Sort
 //Problem Link - https://www.geeksforgeeks.org/problems/selection-sort/1
 
+//Selection Sort - Select minimum element from start and swaps
 class Solution {
   public:
     // Function to perform selection sort on the given array.
