@@ -1,6 +1,7 @@
 //Problem Name - Bubble Sort
 //Problem Link - https://www.geeksforgeeks.org/problems/bubble-sort/1
 
+//Bubble Sort - Push the maximum element to the last by adjacent swaps
 class Solution {
 	public void bubbleSort(int[] arr) {
 		int n = arr.length;
